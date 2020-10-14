@@ -16,14 +16,14 @@ export default function CommetsSection({ comments }) {
   const Comment = styled.div`
     display: grid;
     grid-auto-rows: 3vh minmax(8vh, auto) 2vh;
-    font-size: 1.5vh;
-    padding: 1vw;
+    font-size: 1.2rem;
+    padding: 4vh 1vw;
     border-radius: 10px;
     background-color: rgba(20, 20, 20, 0.8);
 
     .titles {
       font-weight: bold;
-      font-size: 2vh;
+      font-size: 1rem;
     }
 
     .contents {

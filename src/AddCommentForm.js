@@ -44,7 +44,7 @@ export default function AddCommentForm({ memory, comments }) {
     margin: 0 auto;
   `;
 
-  const CommentForm = styled.div`
+  const CommentForm = styled.form`
     display: grid;
     grid-template-rows: 1fr 5fr 1fr 1fr;
     row-gap: 1vh;
@@ -68,7 +68,7 @@ export default function AddCommentForm({ memory, comments }) {
     }
 
     span {
-      font-size: 2vh;
+      font-size: 1rem;
       font-weight: bold;
     }
   `;
@@ -94,7 +94,7 @@ export default function AddCommentForm({ memory, comments }) {
   return (
     <CommentsArapper>
       <BigText> Tell Us what you think...</BigText>
-      <CommentForm>
+      <CommentForm onSubmit={addComment}>
         <InputRow>
           <span>Title:</span>
           <input name="title" ref={titleRef} onKeyUp={next} />

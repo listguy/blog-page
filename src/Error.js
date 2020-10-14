@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { LostPage } from "404-page";
 import "404-page/dist/index.css";
+import morty from "./evil morty.jpg";
 
 export default class ErrorAchusharmuta extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ export default class ErrorAchusharmuta extends Component {
     if (this.state.hasError) {
       return (
         <>
-          <LostPage />
+          <LostPage face={morty} />
           <button onClick={() => window.location.assign("/")}>
             back to blog
           </button>
